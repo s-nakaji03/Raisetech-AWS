@@ -11,6 +11,7 @@
 ## 4.RDSセキュリティグループ
   ![RDSセキュリティグループ](images/lecture04/RDSセキュリティグループ.png)
   ![RDSセキュリティグループ](images/lecture04/RDSセキュリティグループ2.png)
+  ![RDSセキュリティグループ](images/lecture04/RDSセキュリティグループ修正.png)
 
 ## 5. MySQL接続確認
  ![MySQL](images/lecture04/Mysql接続.png)

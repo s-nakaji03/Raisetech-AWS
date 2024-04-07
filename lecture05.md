@@ -22,7 +22,7 @@
     - S3側で登録された画像を確認  
       ![図](images/lecture05/addpicture.png)
       
-    -修正後 S3側で登録された画像（修正内容：WEB上で正しく画像が表示されているか）  
+    - 修正後 S3側で登録された画像（修正内容：WEB上で正しく画像が表示されているか）  
       ![図](images/lecture05/addpicture02.png)
 
 ### AWS構成図

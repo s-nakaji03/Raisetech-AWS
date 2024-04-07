@@ -20,13 +20,18 @@
     ![S3設定](images/lecture05/s3setting.png)  
 
     - S3側で登録された画像を確認  
-      ![図](images/lecture05/addpicture.png)  
-
+      ![図](images/lecture05/addpicture.png)
+      
+    -修正後 S3側で登録された画像（修正内容：WEB上で正しく画像が表示されているか）  
+      ![図](images/lecture05/addpicture02.png)
 
 ### AWS構成図
 
 - [Draw.io](https://app.diagrams.net/)で作成  
-    ![awsdiagram](images/lecture05/awsdiagram.png)  
+    ![awsdiagram](images/lecture05/awsdiagram.png) 
+
+- 修正後AWS構成図（修正内容：S3の役割がわかりにくい）
+    ![awsdiagram](images/lecture05/awsdiagram2.png)  
 
 ## 所感
 

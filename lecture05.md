@@ -31,8 +31,11 @@
     ![awsdiagram](images/lecture05/awsdiagram.png) 
 
 - 修正後AWS構成図（修正内容：S3の役割がわかりにくい）
-    ![awsdiagram](images/lecture05/awsdiagram2.png)  
-
+    ![awsdiagram](images/lecture05/awsdiagram2.png)
+  
+- 再修正後AWS構成図（修正内容：S3の役割・S3の位置）
+    ![awsdiagram](images/lecture05/awsdiagram3.png)
+  
 ## 所感
 
 - 今回の課題は環境を一から構築するところから始まったため前提知識がなく、ネット等で調べながら課題に着手したため相当時間がかかり苦労した。また、調べたとおりに実行してみてもエラーが発生しそれを解消するのがとても大変であった。

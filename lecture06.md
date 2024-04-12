@@ -12,7 +12,7 @@
 ## CloudTrail のイベント名と含まれる内容3点
 
 - イベント画像
-- ![Cloudtrail](images/lecture06/cloudtrailpickup.png)
+  ![Cloudtrail](images/lecture06/cloudtrailpickup.png)
   - イベント名：CreateTrail
   - ユーザー名
   - イベント時間
@@ -26,7 +26,7 @@
 
 - アラームの設定（アラーム状態とOK状態両方を通知）
 　![alert1](images/lecture06/alerthealthy.png)
-　![alert2](images/lecture06/alerthealthy.png)
+　![alert2](images/lecture06/alertunhealthy.png)
 
 - サンプルアプリケーション起動＆停止（アラーム状態＆OK状態）
   - アラームのメールが届く

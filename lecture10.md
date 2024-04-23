@@ -4,25 +4,25 @@
   
 - 「CloudFormation」フォルダ内にテンプレートがあります。下記のようにスタックを分割しました。
 
-1. VPC、Subnet、InternetGateway、RouteTable（[VPC.yml](/Raisetech-AWS/CloudFormation/VPC.yml)）
-2. セキュリティグループ設定（[SecurityGP.yml](/Raisetech-AWS/CloudFormation/SecurityGP.yml)）
-3. リソース等（[Resorces.yml](/Raisetech-AWS/CloudFormation/Resorces.yml)）
+1. VPC、Subnet、InternetGateway、RouteTable（[VPC.yml](CloudFormation/VPC.yml)）
+2. セキュリティグループ設定（[SecurityGP.yml](CloudFormation/SecurityGP.yml)）
+3. リソース等（[Resorces.yml](CloudFormation/Resorces.yml)）
 
 ---
 
 ### CloudFormationで現在までに作った環境をコード化する
 
-- VPC、Subnet、InternetGateway、RouteTable（VPC.yml）<br>![01](/Raisetech-AWS/images/lecture10/VPCandSubnetsSetting.png)
-- セキュリティグループ設定（SecurityGP.yml）<br>![02](/Raisetech-AWS/images/lecture10/SecurityGroupSetting.png)
-- リソース等（Resorces.yml）<br>![03](/Raisetech-AWS/images/lecture10/ResorcesSetting.png)
+- VPC、Subnet、InternetGateway、RouteTable（VPC.yml）<br>![01](images/lecture10/VPCandSubnetsSetting.png)
+- セキュリティグループ設定（SecurityGP.yml）<br>![02](images/lecture10/SecurityGroupSetting.png)
+- リソース等（Resorces.yml）<br>![03](images/lecture10/ResorcesSetting.png)
 
 ---
 
 ###　TeraTermで接続確認
 
-- 接続確認画面(EC2,RDS,S3)<br>![01](/Raisetech-AWS/images/lecture10/EC2connect.png)<br>
-![02](/Raisetech-AWS/images/lecture10/RDSconnect.png)<br>
-![03](/Raisetech-AWS/images/lecture10/S3connect.png)
+- 接続確認画面(EC2,RDS,S3)<br>![01](images/lecture10/EC2connect.png)<br>
+![02](images/lecture10/RDSconnect.png)<br>
+![03](images/lecture10/S3connect.png)
 
 ---
 

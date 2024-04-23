@@ -18,7 +18,7 @@
 
 ---
 
-###　TeraTermで接続確認
+### TeraTermで接続確認
 
 - 接続確認画面(EC2,RDS,S3)<br>![01](images/lecture10/EC2connect.png)<br>
 ![02](images/lecture10/RDSconnect.png)<br>

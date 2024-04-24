@@ -228,7 +228,7 @@ Outputs:
   lecture10VPC:
     Value: !Ref lecture10VPC
     Export:
-      Name: !Sub "${AWS::StackName}-vpc"
+      Name: !Sub "${AWS::StackName}-vpcid"
 
   VPCCIDR:
     Value: !Ref VPCCIDR
@@ -239,7 +239,7 @@ Outputs:
   PublicSubnetA:
     Value: !Ref lecture10PublicSubnetA
     Export:
-      Name: !Sub "${AWS::StackName}-public-subnet-a"
+      Name: !Sub "${AWS::StackName}-public-subnet-a-id"
 
   PublicSubnetACIDR:
     Value: !Ref PublicSubnetACIDR
@@ -249,7 +249,7 @@ Outputs:
   PublicSubnetC:
     Value: !Ref lecture10PublicSubnetC
     Export:
-      Name: !Sub "${AWS::StackName}-public-subnet-c"
+      Name: !Sub "${AWS::StackName}-public-subnet-c-id"
 
   PublicSubnetCCIDR:
     Value: !Ref PublicSubnetCCIDR
@@ -259,7 +259,7 @@ Outputs:
   PrivateSubnetA:
     Value: !Ref lecture10PrivateSubnetA
     Export:
-      Name: !Sub "${AWS::StackName}-private-subnet-a"
+      Name: !Sub "${AWS::StackName}-private-subnet-a-id"
 
   PrivateSubnetACIDR:
     Value: !Ref PrivateSubnetACIDR
@@ -269,7 +269,7 @@ Outputs:
   PrivateSubnetC:
     Value: !Ref lecture10PrivateSubnetC
     Export:
-      Name: !Sub "${AWS::StackName}-private-subnet-c"
+      Name: !Sub "${AWS::StackName}-private-subnet-c-id"
 
   PrivateSubnetCCIDR:
     Value: !Ref PrivateSubnetCCIDR

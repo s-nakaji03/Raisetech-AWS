@@ -75,7 +75,7 @@ Resources:
           GroupSet:
             - Fn::ImportValue: !Sub ${SGStackName}-ec2-securitygp
           SubnetId:
-              Fn::ImportValue: !Sub ${VPCStackName}-public-subnet-a
+              Fn::ImportValue: !Sub ${VPCStackName}-public-subnet-a-id
       IamInstanceProfile: !Ref lecture10EC2InstanceProfile
       Tags:
         - Key: Name
@@ -91,8 +91,8 @@ Resources:
       DBSubnetGroupName: !Sub ${NameBase}-rds-SubnetGroup
       DBSubnetGroupDescription: !Sub ${NameBase}-rds-SubnetGroup created
       SubnetIds:
-        - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-a
-        - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-c
+        - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-a-id
+        - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-c-id
       Tags:
         - Key: "Name"
           Value: !Sub "${NameBase}-rds-SubnetGroup"
@@ -135,8 +135,8 @@ Resources:
       Name: !Sub ${NameBase}-alb
       IpAddressType: ipv4
       Subnets:
-        - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-a
-        - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-c
+        - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-a-id
+        - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-c-id
       SecurityGroups:
         - Fn::ImportValue: !Sub ${SGStackName}-alb-securitygp
       Tags:
@@ -161,7 +161,7 @@ Resources:
       Protocol: HTTP
       ProtocolVersion: HTTP1
       VpcId: 
-        Fn::ImportValue: !Sub ${VPCStackName}-vpc
+        Fn::ImportValue: !Sub ${VPCStackName}-vpcid
       TargetType: instance
       Targets:
         - Id: !Ref lecture10EC2

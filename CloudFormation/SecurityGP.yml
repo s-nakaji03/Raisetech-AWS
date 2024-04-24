@@ -25,7 +25,7 @@ Resources:
       GroupDescription: !Sub ${NameBase}-sg-ec2 created
       GroupName: !Sub ${NameBase}-sg-ec2
       VpcId:
-         Fn::ImportValue: !Sub ${VPCStackName}-vpc
+         Fn::ImportValue: !Sub ${VPCStackName}-vpcid
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 80
@@ -54,7 +54,7 @@ Resources:
       GroupName: !Sub ${NameBase}-sg-rds
       GroupDescription: !Sub ${NameBase}-sg-rds created 
       VpcId: 
-        Fn::ImportValue: !Sub ${VPCStackName}-vpc
+        Fn::ImportValue: !Sub ${VPCStackName}-vpcid
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 3306
@@ -74,7 +74,7 @@ Resources:
       GroupName: !Sub ${NameBase}-sg-elb
       GroupDescription: !Sub ${NameBase}-sg-elb created 
       VpcId:
-        Fn::ImportValue: !Sub ${VPCStackName}-vpc
+        Fn::ImportValue: !Sub ${VPCStackName}-vpcid
       SecurityGroupIngress:
         - IpProtocol: tcp
           FromPort: 80

@@ -73,7 +73,7 @@ Resources:
         - AssociatePublicIpAddress: true
           DeviceIndex: "0"
           GroupSet:
-            - Fn::ImportValue: !Sub ${SGStackName}-ec2-securitygp
+            - Fn::ImportValue: !Sub ${SGStackName}-ec2-securitygp-id
           SubnetId:
               Fn::ImportValue: !Sub ${VPCStackName}-public-subnet-a-id
       IamInstanceProfile: !Ref lecture10EC2InstanceProfile
@@ -120,7 +120,7 @@ Resources:
       StorageEncrypted: false
       StorageType: gp2
       VPCSecurityGroups:
-        - Fn::ImportValue: !Sub ${SGStackName}-rds-securitygp
+        - Fn::ImportValue: !Sub ${SGStackName}-rds-securitygp-id
       BackupRetentionPeriod: 0
 
 #-----------------------------------
@@ -138,7 +138,7 @@ Resources:
         - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-a-id
         - Fn::ImportValue: !Sub ${VPCStackName}-private-subnet-c-id
       SecurityGroups:
-        - Fn::ImportValue: !Sub ${SGStackName}-alb-securitygp
+        - Fn::ImportValue: !Sub ${SGStackName}-alb-securitygp-id
       Tags:
         - Key: Name
           Value: !Sub ${NameBase}-alb

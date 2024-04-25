@@ -280,19 +280,19 @@ Outputs:
   PublicRouteTableA:
     Value: !Ref lecture10PublicRouteTableA
     Export:
-      Name: !Sub "${Namebase}-public-route-a"
+      Name: !Sub "${Namebase}-public-route-a-id"
 
   PublicRouteTableC:
     Value: !Ref lecture10PublicRouteTableC
     Export:
-      Name: !Sub "${Namebase}-public-route-c"
+      Name: !Sub "${Namebase}-public-route-c-id"
 
   PrivateRouteTableA:
     Value: !Ref lecture10PrivateRouteTableA
     Export:
-      Name: !Sub "${Namebase}-private-route-a"
+      Name: !Sub "${Namebase}-private-route-a-id"
 
   PrivateRouteTableC:
     Value: !Ref lecture10PrivateRouteTableC
     Export:
-      Name: !Sub "${Namebase}-private-route-c"
+      Name: !Sub "${Namebase}-private-route-c-id"

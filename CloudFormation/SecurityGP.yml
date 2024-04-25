@@ -93,14 +93,14 @@ Outputs:
   lecture10EC2SecurityGroup:
     Value: !Ref lecture10EC2SecurityGroup
     Export:
-      Name: !Sub "${AWS::StackName}-ec2-securitygp"
+      Name: !Sub "${AWS::StackName}-ec2-securitygp-id"
       
   lecture10RDSSecurityGroup:
     Value: !Ref lecture10RDSSecurityGroup
     Export:
-      Name: !Sub "${AWS::StackName}-rds-securitygp"
+      Name: !Sub "${AWS::StackName}-rds-securitygp-id"
       
   lecture10ELBSecurityGroup:
     Value: !Ref  lecture10ELBSecurityGroup
     Export:
-      Name: !Sub "${AWS::StackName}-alb-securitygp"
+      Name: !Sub "${AWS::StackName}-alb-securitygp-id"

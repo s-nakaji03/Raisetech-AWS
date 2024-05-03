@@ -91,7 +91,9 @@ Resources:
   lecture10PublicSubnetA: 
     Type: "AWS::EC2::Subnet"
     Properties: 
-      AvailabilityZone: "ap-northeast-1a"
+      AvailabilityZone: !Select         #ハードコードを修正
+        - 0                             #　↓
+        - Fn::GetAZs: !Ref AWS::Region  #　↓
       CidrBlock: !Ref PublicSubnetACIDR
       VpcId: !Ref lecture10VPC 
       Tags: 
@@ -102,7 +104,9 @@ Resources:
   lecture10PublicSubnetC: 
     Type: "AWS::EC2::Subnet"
     Properties: 
-      AvailabilityZone: "ap-northeast-1c"
+      AvailabilityZone: !Select         #ハードコードを修正
+        - 1                             #　↓
+        - Fn::GetAZs: !Ref AWS::Region  #　↓
       CidrBlock: !Ref PublicSubnetCCIDR
       VpcId: !Ref lecture10VPC 
       Tags: 
@@ -113,7 +117,9 @@ Resources:
   lecture10PrivateSubnetA: 
     Type: "AWS::EC2::Subnet"
     Properties: 
-      AvailabilityZone: "ap-northeast-1a"
+      AvailabilityZone: !Select         #ハードコードを修正
+        - 0                             #　↓
+        - Fn::GetAZs: !Ref AWS::Region  #　↓
       CidrBlock: !Ref PrivateSubnetACIDR
       VpcId: !Ref lecture10VPC 
       Tags: 
@@ -124,7 +130,9 @@ Resources:
   lecture10PrivateSubnetC: 
     Type: "AWS::EC2::Subnet"
     Properties: 
-      AvailabilityZone: "ap-northeast-1c"
+      AvailabilityZone: !Select         #ハードコードを修正
+        - 1                             #　↓
+        - Fn::GetAZs: !Ref AWS::Region  #　↓
       CidrBlock: !Ref PrivateSubnetCCIDR
       VpcId: !Ref lecture10VPC 
       Tags: 

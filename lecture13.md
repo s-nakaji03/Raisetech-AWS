@@ -7,7 +7,7 @@
 
 ## 構成図
 
-![構成図](images/lecture13/Diagram.png)
+![構成図](images/lecture13/Diagram1.png)
 
 ### 作成したコード
 
